@@ -1,0 +1,20 @@
+[
+  {
+    "name": "linuxea",
+    "clazzPath": "org.linuxea.component.Person",
+    "properties": [
+      {
+        "name": "name",
+        "value": "linuxea"
+      },
+      {
+        "name": "sex",
+        "value": "boy"
+      },
+      {
+        "name": "age",
+        "value": 29
+      }
+    ]
+  }
+]
