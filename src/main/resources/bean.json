@@ -14,6 +14,28 @@
       {
         "name": "age",
         "value": 29
+      },
+      {
+        "name": "wallet",
+        "ref": "wallet"
+      }
+    ]
+  },
+  {
+    "name": "wallet",
+    "clazzPath": "org.linuxea.component.Wallet",
+    "properties": [
+      {
+        "name": "userName",
+        "value": "linuxea"
+      },
+      {
+        "name": "addMoney",
+        "value": 100
+      },
+      {
+        "name": "subMoney",
+        "value": 30
       }
     ]
   }

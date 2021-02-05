@@ -50,7 +50,8 @@ class JsonBeanDefinitionReader(resourceLoader: ResourceLoader) : AbstractBeanDef
                     beanProperty.value = property.value!!
                 } else {
                     val beanReference = BeanReference()
-                    beanReference.name = property.ref!!
+                    beanReference.name = property.name
+                    beanReference.bean = property.ref!!
                     beanProperty.value = beanReference
                 }
                 beanProperty
