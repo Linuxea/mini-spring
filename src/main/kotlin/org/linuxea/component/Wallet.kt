@@ -10,7 +10,7 @@ data class Wallet(var userName: String?, var addMoney: Int?, var subMoney: Int?)
     private val log = ConsoleLogger(this.javaClass)
 
     fun look() {
-        log.info("${this.userName} 累计金额 ${this.addMoney}, 累计花费 ${this.subMoney}")
+        log.trace("${this.userName} 累计金额 ${this.addMoney}, 累计花费 ${this.subMoney}")
     }
 
 }

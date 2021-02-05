@@ -1,16 +1,16 @@
 package org.linuxea.log
 
-enum class LogLevelEnum(val code: Int) {
+enum class LogLevelEnum {
 
-    TRACE(1),
+    TRACE,
 
-    INFO(2),
+    INFO,
 
-    WARN(3),
+    WARN,
 
-    ERROR(4),
+    ERROR,
 
-    FATAL(5),
+    FATAL,
     ;
 
 
