@@ -28,7 +28,7 @@ class JsonBeanDefinitionReader(resourceLoader: ResourceLoader) : AbstractBeanDef
         inputStreamReader.close()
         bufferedReader.close()
         val beanDefinitionStructures: List<BeanDefinitionStructure> =
-            jackJson.parseArray(lines, BeanDefinitionStructure().javaClass)
+            jackJson.parseArray(lines, BeanDefinitionStructure::class.java)
         log.info("beanDefinitionStructures is $beanDefinitionStructures")
         buildBeanDefinition(beanDefinitionStructures)
         log.info(jackJson.toJsonString(super.registry))
